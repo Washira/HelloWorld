@@ -8,3 +8,9 @@ if len(d) < int(n):
 else:
   D = d
 print(D)
+#หรืออีกหนึ่งCode
+d = input()
+n = int(input())
+D = "0"*n + str(d)
+D = D[-max(n,len(str(d))):]
+print(D)
