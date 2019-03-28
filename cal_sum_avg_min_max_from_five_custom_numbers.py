@@ -1,3 +1,4 @@
+#choose 5 numbers to this process
 number=[]
 x=5
 i=1
@@ -6,12 +7,14 @@ while i <= x:
   n=int(input())
   number.append(n)
   i+=1
+#Calculate summary number
 Sum=0
 i=1
 while i <=x:
   print(number[i-1], end = ', ')
   Sum+= number[i-1]
   i+=1
+#Calculate man and min number of them
 Min=0
 Max=0
 i=2
@@ -27,6 +30,7 @@ while i<x:
   Min=N
   Max=M
   i+=1
+#Print all result
 print('\nSum = %d' %Sum)
 print('Average = %f' %(Sum/x))
 print('\nMin = %d' %Min)
